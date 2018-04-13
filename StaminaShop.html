@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Stamina Shop</title>
+	<link href= "scene_main.js" href="stamina.js">
+</head>
+<body>
+<h1>Stamina Store</h1>
+
+	<section>
+		<article>
+			<img src="images/wing.png" alt="">
+			<p>Chicken wings. Stamina +50</p>
+			<button onclick="wingFunction()">Buy</button>
+			<p id="wing"></p>
+			<script src="stamina.js" type="text/javascript"></script>
+			<script>
+                function wingFunction() {
+                    document.getElementById("wing").innerHTML = "Your Stamina gained 50!";
+                    width = width + 50;
+                }
+			</script>
+		</article>
+		<article>
+			<img src="images/pizza.png" alt="">
+			<p>Pizza. Stamina +75</p>
+			<button onclick="pizzaFunction()">Buy</button>
+			<p id="pizza"></p>
+			<script src="stamina.js" type="text/javascript"></script>
+			<script>
+                function pizzaFunction() {
+                    document.getElementById("pizza").innerHTML = "Your Stamina gained 75!";
+                    width = width + 75;
+                }
+			</script>
+		</article>
+		<article>
+			<img src="images/pasta.png" alt="">
+			<p>Pasta. Stamina +100</p>
+			<button onclick="pastaFunction()">Buy</button>
+			<p id="pasta"></p>
+			<script src="stamina.js" type="text/javascript"></script>
+			<script src="scene_main.js" type="text/javascript"></script>
+			<script>
+                function pastaFunction() {
+                    document.getElementById("pasta").innerHTML = "Your Stamina gained 100!";
+                    width = width + 100;
+                }
+			</script>
+		</article>
+	</section>
+

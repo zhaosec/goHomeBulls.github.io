@@ -1,0 +1,24 @@
+Meeting date and time: 1:00 - 2:00 PM, April 12, 2018
+Meeting attendance: 
+
+Everybody is presented.
+
+Summary
+*. Tomorrow is beta release.
+*. Uploading mp3 files
+
+Until last meeting
+
+*. Bohang : almost finish shopping system.
+*. Dongkyu :complete sound effects.
+*. Zhao : Make hall of fame page.
+*. Jaimeen : Make program count.
+
+Until next meeting
+##Everyone should be familiar with javascript.
+#1 day left to Beta release
+
+*. Bohang : Finish the shopping system.
+*. Dongkyu : Complete hall of fame system.
+*. Zhao : Complete hall of fame system.
+*. Jaimeen : Make shopping page functional.
