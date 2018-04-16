@@ -1,166 +1,36 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>goHomeBulls</title>
-
-    <script src="utils.js"></script>
-    <script src="maps.js"></script>
-    <script src="man.js"></script>
-    <script src="main.js"></script>
-    <script src="game.js"></script>
-    <script src="scene_factory.js"></script>
-    <script src="scene/scene.js"></script>
-    <script src="scene/scene_main.js"></script>
-    <script src="scene/scene_title.js"></script>
-    <script src="scene/scene_editor.js"></script>
-    <script src="stamina.js"></script>
-    <script type="text/javascript">
-        function openScore()
-        {
-            window.name = "parentForm";
-            window.open("HallOfFame.html",
-                    "childForm", "width=700, height=700, resizable = no, scrollbars = no");    
-        }
-        function openShop()
-        {
-            window.name = "parentForm";
-            window.open("StaminaShop.html",
-                    "childForm", "width=570, height=700, resizable = no");    
-        }
-    </script>
-
-    <style>
-        .container {
-            margin: 0 auto;
-            width :1000px;
-            height : 600px;
-            position :static;
-            text-align: center;
-            overflow: hidden;
-        }
-        #game {
-            position: relative;
-            top: 5%;
-            width : 400px;
-            left : 50px;
-        }
-        #help {
-            position : relative;
-            top :-66%;
-            width : 400px;
-            left: 500px;
-            text-align: left;
-        }
-        #HallofFame{
-             position: relative;
-             width : 100px;
-             top: 10%;
-             left: 75%;
-             height: 3px;
-        }
-        #StaminaShop{
-            position: relative;
-            width : 200px;
-            top: 5%;
-            left: 0%;
-            height: 3px;
-        }
-        #actionbar-light-grey
-        {   position : relative;
-            top : -70%;
-            width : 400px;
-            left : 50px;
-            height: 30px;
-            color:white!important;
-            background-color:gray;
-            }
-        #stamina{
-          	position : relative;
-          	top : 0%;
-            left : 0%;
-            height: 30px;
-            background-color: green;
-        }
-        #staamt{
-            position : relative;
-          	top : 0px;
-            width : 400px;
-            left : 0px;
-        }
-        #canvas {
-            border: 1px solid #bbb;
-        }
-    </style>
+    <title>Project description</title>
 </head>
-
-
-<div>
-    <div id="StaminaShop">
-        <input type="button" value="Stamina Shop" onclick="openShop()"><br>
-
-</div>
-<audio id="myAudio" autoplay="autoplay">
-    <source src = "Electro.mp3">
-</audio>
-
-<button type="button" onclick="aud_play_pause()" style="position: absolute; right:300px">ON/OFF</button>
-    
 <body>
-    
-    <div class="container">
-        <h1>GoHomeBulls</h1>
-        <div id="game">
-            <canvas id="canvas" width="400" height="400"></canvas>
-        </div>
-        <div id="HallofFame">
-                <a target = "_blank" href="HallOfFame.html">Hall of Fame</a>
-        </div>
-        <div id="help">
-
-            <h3>HELP：</h3>
-            <p>
-                s - Start the game<br>
-                r - Reset the game<br>
-                e - Map editing page <br>
-                c - Save the edited map <br>
-                z - Reset the edited map <br>
-                x - Quit map editing page <br>
-
-            </p>
-            <p>Press（↑ ← ↓ →）control the bulls</p>
-            <p></p>
-            <h4>Some more instructions</h4>
-            <p>
-                Count of moves : <div id = "count" style = "width:15px">0</div> <br>
-                Dinning Dollars: <div id = "Dinings" style = "width:15px">0</div ><br>
-                r - Restart<br>
-            </p>
-        </div>
-        <div id = "actionbar-light-grey" style="height:24px;width:400px">
-            <div id = "stamina" style="height:24px;width:400px">
-                    <p id = "staamt"><span id = "demo" class="actionbar-light-gray" style="width:400px">100</span> %</p>            
-            </div>
-
-        </div>
-
-        <script>
-            function aud_play_pause() {
-                var myAudio = document.getElementById("myAudio");
-
-                if (myAudio.paused) {
-                    myAudio.play();
-
-                } else {
-                    myAudio.pause();
-                }
-            }
-
-            _main('#canvas', 400, 400)
-        </script>
-    </div>
-
+        <table style="width: 660px; margin-left: auto; margin-right: auto;">
+                <tbody>
+                <tr style="height: 21.4px;">
+                <td style="width: 220px; height: 21.4px; text-align: center;"><a href="https://gitter.im/goHomeBulls/Lobby">Contact Us</a></td>
+                <td style="width: 220px; height: 21.4px; text-align: center;"><a href="https://youtu.be/Z4A18OJb3Jo">Video</a></td>
+                <td style="width: 220px; height: 21.4px; text-align: center;"><a href="https://github.com/jaimeenahn/goHomeBulls/issues">Bug report</a></td>
+                </tr>
+                </tbody>
+        </table>
+        <h1 style="text-align: center;"><span style="color: #ff6600;"><strong>Welcome to goHomeBulls.</strong></span></h1>
+<p><span style="background-color: #ffffff;"><strong>&nbsp; &nbsp; Want to kill your time? Are your boring right now, waiting for class? Now today is your lucky day.</strong></span></p>
+<p>&nbsp;</p>
+<h2 style="text-align: center;"><span style="background-color: #ffffff;"><strong>Participate <span style="color: #0000ff;">UBlized</span> Game!!</strong></span></h2>
+<p style="text-align: center;">&nbsp;</p>
+<p><span style="background-color: #ffffff;"><strong>&nbsp; &nbsp; Our game is called goHomeBulls. The goal of&nbsp; game is to push the bulls to the specific destinations, and the destinations are barns shaped. You can control the little man by pressing the arrows from the keyboard. Be aware of the stamina, the game will be aborted if you run out of the stamina. We have game money called Dining Dollar.&nbsp; It will be decreased by each steps you moved, but you can increase your stamina by shopping at the Stamina Shop by your dinning dollar. The Dining Dollar will be given based on the steps of little man has moved. Be aware of the trap in the game, if you fall into the trap the game will be aborted as well. Every steps will be counted from the little man's moving and you can record your scores to hall of fame. <span style="color: #339966;">If you want more information click the video link above.</span></strong></span></p>
+<p><span style="background-color: #ffffff;"><strong>If you find any bugs, <span style="color: #ff0000;">click "Bug report" above to let us know.</span></strong></span></p>
+<p><span style="background-color: #ffffff;"><strong><span style="color: #ff0000;">&lt;WANTED&gt;</span> We are looking for creative maps. click contact us and show us your imagination (Map will be updated ASAP if you let us know)</strong></span></p>
+<p><span style="background-color: #ffffff;"><strong> Anyway, Enjoy our game.&nbsp;</strong></span></p>
+<table style="height: 164px; margin-left: auto; margin-right: auto;" width="484">
+<tbody>
+<tr style="height: 200px;">
+<td style="width: 475.2px; height: 200px;"><a href="http://www.buffalo.edu/~jahn5/goHomeBulls.html"><img src="images\Startnow.jpg" alt="" width="500" height="330" /></a></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p style="text-align: center;">&lt;Please Use Chrome or FireFox&gt;</p>
 </body>
 </html>
