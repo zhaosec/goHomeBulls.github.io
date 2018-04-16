@@ -1,4 +1,5 @@
-﻿<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,38 +17,48 @@
     <script src="scene/scene_title.js"></script>
     <script src="scene/scene_editor.js"></script>
     <script src="stamina.js"></script>
-    <script src="HallofFame.js"></script>
-
-
+    <script type="text/javascript">
+        function openScore()
+        {
+            window.name = "parentForm";
+            window.open("HallOfFame.html",
+                    "childForm", "width=700, height=700, resizable = no, scrollbars = no");    
+        }
+        function openShop()
+        {
+            window.name = "parentForm";
+            window.open("StaminaShop.html",
+                    "childForm", "width=570, height=700, resizable = no");    
+        }
+    </script>
 
     <style>
         .container {
             margin: 0 auto;
             width :1000px;
-            height : 99%;
+            height : 600px;
             position :static;
             text-align: center;
             overflow: hidden;
         }
         #game {
             position: relative;
-            top: 50px;
+            top: 5%;
             width : 400px;
             left : 50px;
         }
         #help {
             position : relative;
-            top : -360px;
+            top :-66%;
             width : 400px;
-            height : 400px;
             left: 500px;
             text-align: left;
         }
         #HallofFame{
              position: relative;
              width : 100px;
-             top: 5%;
-             left: 85%;
+             top: 10%;
+             left: 75%;
              height: 3px;
         }
         #StaminaShop{
@@ -59,7 +70,7 @@
         }
         #actionbar-light-grey
         {   position : relative;
-            top : -380px;
+            top : -70%;
             width : 400px;
             left : 50px;
             height: 30px;
@@ -68,8 +79,8 @@
             }
         #stamina{
           	position : relative;
-          	top : 0px;
-            left : 0px;
+          	top : 0%;
+            left : 0%;
             height: 30px;
             background-color: green;
         }
@@ -84,22 +95,18 @@
         }
     </style>
 </head>
-<div>
-        <div id="HallofFame">
-            <a target="_blank" href="HallOfFame.html">Hall of Fame</a></div>
 
-</div>
+
 <div>
     <div id="StaminaShop">
-        <a href="StaminaShop.html">Stamina Shop</a></div>
+        <input type="button" value="Stamina Shop" onclick="openShop()"><br>
+
 </div>
 <audio id="myAudio" autoplay="autoplay">
-    <source src="Electro.mp3">
-
-
+    <source src = "Electro.mp3">
 </audio>
 
-<button type="button" onclick="aud_play_pause()" style="position: absolute; right:0">ON/OFF</button>
+<button type="button" onclick="aud_play_pause()" style="position: absolute; right:300px">ON/OFF</button>
     
 <body>
     
@@ -108,8 +115,11 @@
         <div id="game">
             <canvas id="canvas" width="400" height="400"></canvas>
         </div>
+        <div id="HallofFame">
+                <a target = "_blank" href="HallOfFame.html">Hall of Fame</a>
+        </div>
+        <div id="help">
 
-       <div id="help">
             <h3>HELP：</h3>
             <p>
                 s - Start the game<br>
@@ -118,13 +128,14 @@
                 c - Save the edited map <br>
                 z - Reset the edited map <br>
                 x - Quit map editing page <br>
+
             </p>
             <p>Press（↑ ← ↓ →）control the bulls</p>
             <p></p>
             <h4>Some more instructions</h4>
             <p>
-                Count of moves:<br>
-                Dinning Dollars<br>
+                Count of moves : <div id = "count" style = "width:15px">0</div> <br>
+                Dinning Dollars: <div id = "Dinings" style = "width:15px">0</div ><br>
                 r - Restart<br>
             </p>
         </div>
@@ -134,8 +145,6 @@
             </div>
 
         </div>
-
-
 
         <script>
             function aud_play_pause() {
@@ -151,22 +160,7 @@
 
             _main('#canvas', 400, 400)
         </script>
-<article id="content3" contenteditable="true">
-<p>Sweet roll tiramisu chocolate bar sugar plum caramels tootsie roll caramels. Chocolate cake wypas cotton candy icing. Applicake sesame snaps liquorice pastry croissant caramels fruitcake gingerbread biscuit. Donut toffee candy canes.</p>
-</article>
-<button id="save">Save Changes</button>
-<script>
-    var theContent = $('#content3');
-
-    $('#save').on('click', function(){
-        var editedContent   = theContent.html();
-        localStorage.newContent = editedContent;
-    });
-</script>
-
-
     </div>
-
 
 </body>
 </html>

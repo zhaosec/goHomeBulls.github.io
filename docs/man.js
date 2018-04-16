@@ -3,6 +3,7 @@ class Man{
         this.direction = 'down'
         this.x = 0
         this.y = 0
+        this.passout = 0;
     }
     moveUp (map){
         let x = this.x
@@ -33,7 +34,11 @@ class Man{
 			   //bull's position used to be a house
                     if (map[x - 2][y] == MAP_CODE.house){
                         map[x - 2][y] = MAP_CODE.boxedBull
-                    } else {
+                    }else if(map[x-2][y] == MAP_CODE.trap)
+                    {
+                        map[x-1][y] = MAP_CODE.man
+                    } 
+                    else {
                         map[x - 2][y] = MAP_CODE.bull
                     }
                 }
@@ -61,6 +66,13 @@ class Man{
                     map[x][y] = MAP_CODE.block
                 }
                 map[x - 1][y] = MAP_CODE.manBall
+                break;
+            case MAP_CODE.trap:
+                map[x][y] = MAP_CODE.block
+                map[x-1][y] = MAP_CODE.mantrap
+                this.x--;
+                this.passout = 1
+                alert('Dead! X_X')
                 break;
             default:
                 alert('moveUp error!')
@@ -97,7 +109,11 @@ class Man{
 			//Bull's position used to be a house
                     if (map[x + 2][y] == MAP_CODE.house){
                         map[x + 2][y] = MAP_CODE.boxedBull
-                    } else {
+                    }else if(map[x+2][y] == MAP_CODE.trap)
+                    {
+                        map[x+1][y] = MAP_CODE.man
+                    } 
+                    else {
                         map[x + 2][y] = MAP_CODE.bull
                     }
                 }
@@ -125,6 +141,13 @@ class Man{
                     map[x][y] = MAP_CODE.block
                 }
                 map[x + 1][y] = MAP_CODE.manBall
+                break;
+            case MAP_CODE.trap:
+                map[x][y] = MAP_CODE.block
+                map[x+1][y] = MAP_CODE.mantrap
+                this.x++;
+                this.passout = 1
+                alert('Dead! X_X')
                 break;
             default:
                 alert('moveUp error!')
@@ -159,7 +182,11 @@ class Man{
 
                     if (map[x][y - 2] == MAP_CODE.house){
                         map[x][y - 2] = MAP_CODE.boxedBull
-                    } else {
+                    }else if(map[x][y - 2] == MAP_CODE.trap)
+                    {
+                        map[x][y-1] = MAP_CODE.man
+                    } 
+                    else {
                         map[x][y - 2] = MAP_CODE.bull
                     }
                 }
@@ -187,6 +214,13 @@ class Man{
                     map[x][y] = MAP_CODE.block
                 }
                 map[x][y - 1] = MAP_CODE.manBall
+                break;
+            case MAP_CODE.trap:
+                map[x][y] = MAP_CODE.block
+                map[x][y-1] = MAP_CODE.mantrap
+                this.y--;
+                this.passout = 1
+                alert('Dead! X_X')
                 break;
             default:
                 alert('moveUp error!')
@@ -224,7 +258,11 @@ class Man{
 			// is used to be a house
                     if (map[x][y + 2] == MAP_CODE.house){
                         map[x][y + 2] = MAP_CODE.boxedBull
-                    } else {
+                    } else if(map[x][y + 2] == MAP_CODE.trap)
+                    {
+                        map[x][y+1] = MAP_CODE.man
+                    }
+                    else{
                         map[x][y + 2] = MAP_CODE.bull
                     }
                 }
@@ -253,8 +291,15 @@ class Man{
                 }
                 map[x][y + 1] = MAP_CODE.manBall
                 break;
+            case MAP_CODE.trap:
+                map[x][y] = MAP_CODE.block
+                map[x][y+1] = MAP_CODE.mantrap
+                this.y++;
+                this.passout = 1
+                alert('Dead! X_X')
+                break;
             default:
-                alert('moveUp error!')
+                alert('moveRight error!')
                 break;
         }
 

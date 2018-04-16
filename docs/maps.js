@@ -7,6 +7,8 @@ var MAP_CODE = {
     man: 5, // this is the character we use
     boxedBull: 6, // this is the object after pushing bull to the house
     manBall: 7,
+    trap: 8,
+    mantrap: 9,
 }
 var CONFIG = {
     blockWidth: 40,
@@ -35,7 +37,7 @@ window.boxMaps = [
         [2, 1, 3, 1, 2, 1, 2, 4, 2, 1,],
         [2, 2, 2, 1, 2, 2, 2, 4, 2, 1,],
         [1, 2, 2, 1, 1, 1, 1, 4, 2, 1,],
-        [1, 2, 1, 1, 1, 2, 1, 1, 2, 1,],
+        [1, 2, 1, 1, 1, 8, 1, 1, 2, 1,],
         [1, 2, 1, 1, 1, 2, 2, 2, 2, 1,],
         [1, 2, 2, 2, 2, 2, 1, 1, 1, 1,],
         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1,],

@@ -12,6 +12,8 @@ function _main(canvasDom, width, height) {
         up: 'images/up.png',
         wall: 'images/wall.png',
         boxedBull: 'images/boxedBull.png',
+        trap: 'images/trap.png',
+        dead: 'images/dead.png',
     }
     let game = new Game(canvas)
     initImages(images, game)

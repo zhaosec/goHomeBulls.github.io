@@ -2,6 +2,20 @@
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/goHomeBulls/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+##Landing Page
+http://www.acsu.buffalo.edu/~jahn5/
+
+##How to run?
+
+1. please visit http://www.acsu.buffalo.edu/~jahn5/
+
+2. press the "Start Now"
+
+3. press "s" to start game
+
+##Youtube Video(Beta release)
+https://youtu.be/Z4A18OJb3Jo
+
 ## Table of Contents 
 ### 1. MVP
 ### 2. Add-On-Features
@@ -49,19 +63,4 @@ Basically game should be fun and I want to make every bulls be their home for th
 
 ***
 
-##How to run?
 
-1. please visit https://github.com/jaimeenahn/goHomeBulls
-
-2. press the "release"
-
-3. click goHomeBulls v0.2.0 
-
-4. unzip the file 
-
-5. press goHomeBulls.html (Use Chrome)
-
-6. press "s" to start game
-
-##Youtube Video(alpha release)
-https://youtu.be/1xIZpVAcAiM
