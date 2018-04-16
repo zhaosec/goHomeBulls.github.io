@@ -1,0 +1,26 @@
+Meeting date and time: 1:00 - 2:00 PM, March 15, 2018
+Meeting attendance: 
+
+Everybody is presented.
+
+Summary
+
+*.Create Alpha release
+*.Make it functional
+
+Until last meeting
+#Busy because of exam these days
+*. Bohang : Modify map to UBbuillding and bulls in map 
+*. Dongkyu : Link each stage and move bulls by keyboards
+*. Zhao : Make mans function
+*. Jaimeen : Make the stamina decreased by moving and time, make it related to game.
+
+
+Until next meeting
+##Everyone should be familiar with javascript.
+#FINISH ALPHA RELEASE
+
+*. Bohang : Apply Bulls and Building images into the game
+*. Dongkyu : Link all of stages(maps) and make bulls move wherever in the maps 
+*. Zhao : Wrap up the code, connect the man.js to other program function.
+*. Jaimeen : Make the stamina decreased by moving and time(STILL WORKING), put all things in index.html

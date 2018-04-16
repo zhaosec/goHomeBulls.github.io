@@ -1,0 +1,22 @@
+Meeting date and time: 1:00 ? 2:00 PM, February 15, 2018
+Meeting attendance: Everyone present
+
+Summary
+
+*. Create git branch
+*. Discuss about what we have to do till next meeting
+
+From last meeting
+
+*. Create gitter both public and private
+*. Create our repo
+*. Add readme.md to describe our project
+*. Remind prototype DUE date FEB 23
+
+
+Until next meeting
+
+*. Bohang : Make basic GUI like rolling button and showing the dice number.
+*. Dongkyu : Finding appropriate sound and put sound effect when rolling the dice
+*. Zhao : Create dice basic structrue and make it randomized. 
+*. Jaimeen : Create sign up and log in system

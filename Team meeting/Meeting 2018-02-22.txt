@@ -1,0 +1,27 @@
+Meeting date and time: 1:00 - 2:10 PM, February 22, 2018
+Meeting attendance: 
+
+Everybody is presented.
+
+Summary
+
+*. Considering change into new one
+*. DIscuss about new project and keep our things.
+
+what each individual team member accomplished since the last meeting
+
+*. Bohang : Make basic GUI like rolling button and showing the dice number.
+*. Dongkyu : Finding appropriate sound and put sound effect when rolling the dice
+*. Zhao : Create dice basic structrue and make it randomized. 
+*. Jaimeen : Create basic sign up and log in system
+
+
+Until next meeting
+If we do not change the project
+
+*. Bohang : Insert background image to UI and link each other classes.
+*. Dongkyu :Put sound effect when we click buttons 
+*. Zhao : Create dice rolling image 
+*. Jaimeen : Make basic database
+
+But it is possibility to change project.

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Stamina Shop</title>
+	<link href= "scene_main.js" href="stamina.js">
+</head>
+<body>
+<h1>Stamina Store</h1>
+
+	<section>
+		<div>
+			<img src="images/wing.png" alt="">
+			<p>Chicken Wings 【Stamina +10】【Dinning -75】</p>
+			<button onclick="wingFunction()">Buy</button>
+			<p id="wing"></p>
+			<script src="stamina.js" type="text/javascript"></script>
+			<script>
+                function wingFunction() {
+					if(opener.document.getElementById("Dinings").innerHTML>=75)
+                    {
+						document.getElementById("wing").innerHTML = "Your Stamina gained 10!";
+						if(parseInt(opener.document.getElementById("demo").innerHTML)+10 < 100){
+							opener.document.getElementById("demo").innerHTML = parseInt(opener.document.getElementById("demo").innerHTML) + 10;
+						}
+						else{
+							opener.document.getElementById("demo").innerHTML = 100;
+						}
+						var elem = opener.document.getElementById("stamina");
+						elem.style.width = opener.document.getElementById("demo").innerHTML + '%';
+						opener.document.getElementById("Dinings").innerHTML = opener.document.getElementById("Dinings").innerHTML - 75;
+				}
+				else{
+					alert("Lack of Dinning dollars");
+				}
+			}
+			</script>
+		</div>
+		<div>
+			<img src="images/pizza.png" alt="">
+			<p>Pizza 【Stamina +20】【Dinning -140】</p>
+			<button onclick="pizzaFunction()">Buy</button>
+			<p id="pizza"></p>
+			<script src="stamina.js" type="text/javascript"></script>
+			<script>
+                function pizzaFunction() {
+					if(opener.document.getElementById("Dinings").innerHTML>=140)
+					{
+						document.getElementById("pizza").innerHTML = "Your Stamina gained 20!";
+						if(parseInt(opener.document.getElementById("demo").innerHTML)+20 < 100){
+							opener.document.getElementById("demo").innerHTML = parseInt(opener.document.getElementById("demo").innerHTML) + 20;
+						}else{
+							opener.document.getElementById("demo").innerHTML = 100;
+						}
+						var elem = opener.document.getElementById("stamina");
+						elem.style.width = opener.document.getElementById("demo").innerHTML + '%';
+						opener.document.getElementById("Dinings").innerHTML = opener.document.getElementById("Dinings").innerHTML - 140;
+					}else
+					{
+						alert("Lack of Dinning Dollars")
+					}
+                }
+			</script>
+		</div>
+		<div>
+			<img src="images/pasta.png" alt="">
+			<p>Pasta 【Stamina +40】 【Dinning -250】</p>
+			<button onclick="pastaFunction()">Buy</button>
+			<p id="pasta"></p>
+			<script src="stamina.js" type="text/javascript"></script>
+			<script src="scene_main.js" type="text/javascript"></script>
+			<script>
+                function pastaFunction() {
+					if(opener.document.getElementById("Dinings").innerHTML>=250)
+					{
+						document.getElementById("pasta").innerHTML = "Your Stamina gained 40!";
+						if(parseInt(opener.document.getElementById("demo").innerHTML)+ 40<100){
+							opener.document.getElementById("demo").innerHTML = parseInt(opener.document.getElementById("demo").innerHTML) + 40;
+							
+						}else{
+							opener.document.getElementById("demo").innerHTML = 100;
+						}
+						var elem = opener.document.getElementById("stamina");
+						elem.style.width = opener.document.getElementById("demo").innerHTML + '%';
+						opener.document.getElementById("Dinings").innerHTML = opener.document.getElementById("Dinings").innerHTML - 250;
+					}else
+					{
+						alert("Lack of Dinning Dollars")
+					}
+                }
+			</script>
+		</div>
+	</section>
+
