@@ -179,6 +179,9 @@ class SceneMain extends Scene{
 
             }
         }
+	if (bullcount < homecount){
+		return true
+	}
         if(bullcount > 0){
             return false
         }
